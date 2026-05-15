@@ -1549,7 +1549,133 @@
     .sp-subtitle {
       color: #111 !important;
       opacity: 1 !important;
-    }</style>
+    }
+
+@media (max-width: 768px) {
+  nav {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 10px 12px 12px !important;
+    gap: 10px !important;
+  }
+
+  .nav-logo {
+    grid-column: 1 !important;
+    justify-self: start !important;
+    align-self: center !important;
+    display: flex !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .nav-logo-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .nav-logo-name {
+    font-size: 18px !important;
+  }
+
+  .nav-logo-tagline {
+    font-size: 10px !important;
+    line-height: 1.15 !important;
+  }
+
+  .nav-links {
+    grid-column: 1 !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .nav-links li a {
+    font-size: 10px !important;
+    line-height: 1.1 !important;
+    letter-spacing: 0.03em !important;
+    padding: 4px 5px !important;
+    white-space: nowrap !important;
+  }
+
+  .nav-sep {
+    display: none !important;
+  }
+
+  .page-hero {
+    padding: 44px 16px 38px !important;
+    box-sizing: border-box !important;
+  }
+
+  .page-hero h1,
+  .page-hero .page-hero-sub {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .page-hero h1 {
+    font-size: 42px !important;
+    line-height: 1.12 !important;
+  }
+
+  .page-hero .page-hero-sub {
+    font-size: 29px !important;
+    line-height: 1.45 !important;
+  }
+
+  .sp-list {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 44px 16px 64px !important;
+    box-sizing: border-box !important;
+  }
+
+  .sp-item {
+    width: 100% !important;
+    padding: 44px 0 !important;
+  }
+
+  .sp-header {
+    width: 100% !important;
+    gap: 18px !important;
+  }
+
+  .sp-body,
+  .sp-short,
+  .sp-tags {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .sp-title {
+    font-size: 38px !important;
+    line-height: 1.12 !important;
+  }
+
+  .sp-num {
+    font-size: 24px !important;
+  }
+
+  .sp-tag {
+    font-size: 14px !important;
+    line-height: 1.25 !important;
+    padding: 8px 10px !important;
+  }
+
+  body main#main-content .page .sp-list .sp-item .sp-body p.sp-short {
+    font-size: 30px !important;
+    line-height: 1.42 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+  </style>
 </head>
 <body>
 
@@ -1592,7 +1718,7 @@
 
   <div class="page-hero" style="background:var(--neige); border-bottom:1px solid var(--ecume);">
     <h1>Mes <em>soins</em></h1>
-    <p class="page-hero-sub" style="font-family:var(--font-sub);font-style:italic;font-size:22px!important;color:#111!important;max-width:560px;line-height:1.6!important;">Un accompagnement individualisé, pensé pour chaque animal — à domicile ou en visioconférence.</p>
+    <p class="page-hero-sub">Un accompagnement individualisé, pensé pour chaque animal — à domicile ou en visioconférence.</p>
   </div>
 
   <div class="sp-list">
