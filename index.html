@@ -1719,6 +1719,50 @@
 }
 
 @media (max-width: 1024px) {
+  nav {
+    grid-template-columns: auto 1fr !important;
+    gap: 14px !important;
+    height: auto !important;
+    min-height: 88px !important;
+    padding: 10px 16px !important;
+  }
+
+  .nav-logo {
+    align-self: start !important;
+    gap: 10px !important;
+  }
+
+  .nav-logo-icon {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .nav-logo-name {
+    font-size: 18px !important;
+  }
+
+  .nav-logo-tagline {
+    font-size: 10px !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    grid-column: 2 !important;
+    justify-content: flex-end !important;
+    flex-wrap: wrap !important;
+    gap: 8px 12px !important;
+  }
+
+  .nav-links li a {
+    font-size: 14px !important;
+    letter-spacing: 0.08em !important;
+    padding: 8px 4px !important;
+  }
+
+  .nav-sep {
+    display: none !important;
+  }
+
   .hero {
     display: flex !important;
     flex-direction: column !important;
@@ -1754,15 +1798,29 @@
   .hero-content {
     order: 2 !important;
     width: 100% !important;
-    max-width: 680px !important;
-    padding: 40px 22px 48px !important;
-    margin: 0 auto !important;
+    max-width: none !important;
+    padding: 36px 16px 48px !important;
+    margin: 0 !important;
     box-sizing: border-box !important;
+  }
+
+  .hero-overline,
+  .hero-title,
+  .hero-subtitle,
+  .hero-badges,
+  .hero-cta,
+  .hero-location {
+    width: 100% !important;
+    max-width: none !important;
   }
 
   .hero-title {
     font-size: clamp(31px, 8vw, 46px) !important;
     line-height: 1.12 !important;
+  }
+
+  .hero-title br {
+    display: none !important;
   }
 
   .hero-subtitle {
