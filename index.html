@@ -1717,6 +1717,67 @@
   }
   .footer-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
 }
+
+@media (max-width: 1024px) {
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .hero-photo {
+    order: 1 !important;
+    width: 100% !important;
+    height: clamp(260px, 62vw, 430px) !important;
+    overflow: hidden !important;
+  }
+
+  .hero-photo-frame {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .hero-photo-frame img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 38% !important;
+  }
+
+  .hero-photo-corner {
+    display: none !important;
+  }
+
+  .hero-content {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 680px !important;
+    padding: 40px 22px 48px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-title {
+    font-size: clamp(31px, 8vw, 46px) !important;
+    line-height: 1.12 !important;
+  }
+
+  .hero-subtitle {
+    max-width: none !important;
+    font-size: 18px !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-cta {
+    width: 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+}
   </style>
 </head>
 <body>
