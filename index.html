@@ -1581,6 +1581,108 @@
     .btn-cta-outline:hover {
       color: var(--neige) !important;
     }
+    /* ============================================================
+   RESPONSIVE MOBILE — À INSÉRER JUSTE AVANT </style> dans index.html
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* BANDE CONTACT */
+  .contact-band {
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 16px;
+    text-align: center;
+  }
+  .contact-band .sep { display: none; }
+
+  /* NAVIGATION */
+  nav {
+    grid-template-columns: 1fr auto;
+    padding: 0 16px;
+    height: 64px;
+  }
+  .nav-links {
+    display: none; /* menu hamburger à implémenter si besoin */
+  }
+  .nav-rdv { display: none; }
+
+  /* ── HERO ── */
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    min-height: auto;
+  }
+  .hero-content {
+    padding: 48px 24px 36px;
+    order: 2;
+  }
+  .hero-photo {
+    order: 1;
+    height: 55vw;
+    min-height: 240px;
+    max-height: 340px;
+  }
+  .hero-photo-frame {
+    position: relative;
+    top: 0; left: 0; right: 0; bottom: 0;
+    height: 100%;
+  }
+  .hero-photo-corner { display: none; }
+  .hero-title { font-size: clamp(28px, 7vw, 38px); }
+  .hero-subtitle { font-size: 17px; }
+  .hero-badges { gap: 6px; }
+  .hero-cta { width: 100%; justify-content: center; font-size: 11px; padding: 14px 20px; }
+  .hero-location { font-size: 14px; gap: 10px 12px; }
+
+  /* ── CITATION ÉMOTIONNELLE ── */
+  .emotional {
+    flex-direction: column;
+    padding: 28px 24px;
+    gap: 20px;
+  }
+
+  /* ── NOTICE IMPORTANTE ── */
+  .home-important-notice {
+    margin: 0 16px 48px;
+    padding: 20px 20px;
+  }
+
+  /* ── APERÇU SOINS ── */
+  .accueil-soins { padding: 48px 16px 40px; }
+  .accueil-soins-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .acc-card--naturo  { grid-column: 1; grid-row: auto; min-height: 260px; }
+  .acc-card--phyto   { grid-column: 1; grid-row: auto; }
+  .acc-card--energie { grid-column: 1; grid-row: auto; }
+  .acc-card--mtc     { grid-column: 1; grid-row: auto; }
+  .acc-card--phi     { grid-column: 1; grid-row: auto; }
+
+  /* ── BANDE MODES ── */
+  .modes-band { padding: 24px 16px; }
+  .modes-inner { grid-template-columns: 1fr; }
+
+  /* ── SECTION ANIMAL ── */
+  .animal { padding: 60px 16px; }
+  .animal-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .animal-especes { grid-template-columns: 1fr; gap: 8px; }
+  .animal-visual { display: none; } /* masqué sur mobile pour alléger */
+  .animal-cta { width: 100%; justify-content: center; }
+
+  /* ── FOOTER ── */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 24px 16px;
+  }
+  .footer-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+}
   </style>
 </head>
 <body>
@@ -1954,7 +2056,8 @@
     Pour une meilleure expérience, veuillez activer JavaScript dans votre navigateur.<br/>
     Contactez Danièle Guieu directement : <a href="tel:+33660091309" style="color:#111;">06 60 09 13 09</a> · <a href="mailto:danieleguieu66@gmail.com" style="color:#111;">danieleguieu66@gmail.com</a>
   </div>
-</noscript>
+</noscript>
+
 
 <!-- Référence sitemap : créer /sitemap.xml et /robots.txt à la racine du serveur -->
 <!-- robots.txt suggéré :
@@ -1971,7 +2074,8 @@
     Pour une meilleure expérience, veuillez activer JavaScript dans votre navigateur.<br/>
     Contactez Danièle Guieu directement : <a href="tel:+33660091309" style="color:#111;">06 60 09 13 09</a> · <a href="mailto:danieleguieu66@gmail.com" style="color:#111;">danieleguieu66@gmail.com</a>
   </div>
-</noscript>
+</noscript>
+
 
 </body>
 </html>
