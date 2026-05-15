@@ -2016,10 +2016,21 @@
 
 @media (max-width: 768px) {
   nav {
-    grid-template-columns: auto 1fr !important;
-    min-height: 104px !important;
-    padding: 10px 12px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 10px 12px 12px !important;
     gap: 10px !important;
+  }
+
+  .nav-logo {
+    grid-column: 1 !important;
+    justify-self: start !important;
+    align-self: center !important;
+    display: flex !important;
+    width: 100% !important;
   }
 
   .nav-logo-icon {
@@ -2037,12 +2048,14 @@
   }
 
   .nav-links {
-    display: grid !important;
-    grid-template-columns: repeat(3, max-content) !important;
-    justify-content: end !important;
+    grid-column: 1 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
     align-content: center !important;
-    gap: 8px 12px !important;
+    gap: 7px 14px !important;
     max-width: none !important;
+    width: 100% !important;
   }
 
   .nav-links li a {
