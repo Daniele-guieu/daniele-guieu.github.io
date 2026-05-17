@@ -2,7 +2,7 @@
 <html lang="fr" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <!-- ═══════════════════════════════════════════════
        SÉCURITÉ — POLITIQUE APPLICABLE EN STATIQUE
        GitHub Pages ne permet pas de définir des en-têtes HTTP personnalisés.
@@ -1546,6 +1546,152 @@
   
     .ml-header-doc-label {
       color: #111 !important;
+    }
+
+    @media (max-width: 768px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+      }
+
+      body,
+      main,
+      #main-content,
+      .page {
+        box-sizing: border-box !important;
+      }
+
+      nav {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 10px 12px 12px !important;
+        gap: 10px !important;
+        box-sizing: border-box !important;
+      }
+
+      .nav-logo {
+        grid-column: 1 !important;
+        justify-self: start !important;
+        align-self: center !important;
+        display: flex !important;
+        width: 100% !important;
+        gap: 10px !important;
+      }
+
+      .nav-logo-icon {
+        width: 40px !important;
+        height: 40px !important;
+      }
+
+      .nav-logo-name {
+        font-size: 18px !important;
+      }
+
+      .nav-logo-tagline {
+        font-size: 10px !important;
+        line-height: 1.15 !important;
+      }
+
+      .nav-links {
+        grid-column: 1 !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+      }
+
+      .nav-links li a {
+        font-size: 10px !important;
+        line-height: 1.1 !important;
+        letter-spacing: 0.03em !important;
+        padding: 4px 5px !important;
+        white-space: nowrap !important;
+      }
+
+      .nav-sep {
+        display: none !important;
+      }
+
+      .ml-header,
+      .ml-body,
+      .ml-section,
+      .ml-section-body,
+      .ml-table,
+      .ml-footer-doc {
+        width: 100% !important;
+        max-width: none !important;
+        box-sizing: border-box !important;
+      }
+
+      .ml-header {
+        padding: 28px 16px 24px !important;
+      }
+
+      .ml-header-top,
+      .ml-header-ref,
+      .ml-section-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+      }
+
+      .ml-header-doc {
+        text-align: left !important;
+      }
+
+      .ml-header-doc-title {
+        font-size: 36px !important;
+        line-height: 1.15 !important;
+      }
+
+      .ml-body {
+        padding: 36px 16px 72px !important;
+        margin: 0 !important;
+      }
+
+      .ml-section-body {
+        padding: 22px 18px 24px !important;
+      }
+
+      .ml-section h2 {
+        font-size: 18px !important;
+        line-height: 1.25 !important;
+      }
+
+      .ml-section p,
+      .ml-notice,
+      .ml-table td,
+      .ml-footer-doc span {
+        font-size: 17px !important;
+        line-height: 1.55 !important;
+      }
+
+      .ml-table,
+      .ml-table tbody,
+      .ml-table tr,
+      .ml-table td {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      .ml-table td:first-child {
+        padding-top: 14px !important;
+        padding-bottom: 4px !important;
+      }
+
+      .ml-table td:last-child {
+        padding-top: 0 !important;
+        padding-bottom: 14px !important;
+      }
     }
 
   </style>
