@@ -1799,6 +1799,28 @@
         letter-spacing: 0.04em !important;
         white-space: nowrap !important;
       }
+    }
+    /* AJUSTEMENT MOBILE ENCADRE IMPORTANT PARCOURS */
+    @media (max-width: 768px) {
+      body main#main-content #page-parcours .about-notice-box {
+        margin-top: 18px !important;
+        padding: 12px 14px !important;
+        font-size: 16px !important;
+        line-height: 1.35 !important;
+        min-height: 0 !important;
+      }
+
+      body main#main-content #page-parcours .about-notice-box strong {
+        font-size: 16px !important;
+        line-height: 1.35 !important;
+      }
+
+      body main#main-content #page-parcours .about-notice-box::before {
+        top: -8px !important;
+        left: 12px !important;
+        font-size: 8px !important;
+        padding: 0 6px !important;
+      }
     }</style>
 </head>
 <body>
